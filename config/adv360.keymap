@@ -35,7 +35,13 @@
         select_all_macro: select_all_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL>, <&macro_tap>, <&kp A>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LCTRL>;
 
             label = "SELECT_ALL_MACRO";
         };
